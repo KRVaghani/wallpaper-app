@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+    <item
+        android:id="@+id/shere"
+        android:icon="@drawable/share"
+        android:title="share" />
+    <item
+        android:id="@+id/rate"
+        android:icon="@drawable/baseline_star_rate_24"
+        android:title="Rate us" />
+
+    <item
+        android:id="@+id/mycreation"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Creaction" />
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/baseline_exit_to_app_24"
+        android:title="Exit" />
+</menu>
+

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetWallpaper">
+
+    <RelativeLayout
+        android:id="@+id/rlimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/setimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_fullview"/>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:src="@drawable/menudial"
+            app:fabSize="normal"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24sdp"
+            app:fabSize="normal"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/open"
+            app:layout_constraintEnd_toEndOf="@+id/open"
+            app:layout_constraintStart_toStartOf="@+id/open"
+            app:srcCompat="@drawable/wallpaper" />
+
+        <TextView
+            android:id="@+id/tvsetwall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Set Wallpaper"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/Apply"
+            app:layout_constraintEnd_toStartOf="@+id/Apply"
+            app:layout_constraintTop_toTopOf="@+id/Apply"
+            app:layout_constraintVertical_bias="0.54" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24sdp"
+            app:fabSize="normal"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/Apply"
+            app:layout_constraintEnd_toEndOf="@+id/Apply"
+            app:layout_constraintStart_toStartOf="@+id/Apply"
+            app:srcCompat="@drawable/download" />
+
+        <TextView
+            android:id="@+id/tvdownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Download"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/download"
+            app:layout_constraintEnd_toStartOf="@+id/download"
+            app:layout_constraintTop_toTopOf="@+id/download"
+            app:layout_constraintVertical_bias="0.54" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/wallshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_90sdp"
+            app:fabSize="normal"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/Apply"
+            app:layout_constraintEnd_toEndOf="@+id/Apply"
+            app:srcCompat="@drawable/share" />
+
+        <TextView
+            android:id="@+id/tvwallshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Share"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/wallshare"
+            app:layout_constraintEnd_toStartOf="@+id/wallshare"
+            app:layout_constraintTop_toTopOf="@+id/wallshare"
+            app:layout_constraintVertical_bias="0.621"
+            tools:ignore="MissingConstraints" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_24sdp"
+            app:fabSize="normal"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/wallshare"
+            app:layout_constraintEnd_toEndOf="@+id/wallshare"
+            app:layout_constraintStart_toStartOf="@+id/wallshare"
+            app:srcCompat="@drawable/favorite_border" />
+
+        <TextView
+            android:id="@+id/tvfavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Fevorite"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/favorite"
+            app:layout_constraintEnd_toStartOf="@+id/favorite"
+            app:layout_constraintTop_toTopOf="@+id/favorite"
+            app:layout_constraintVertical_bias="0.54" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

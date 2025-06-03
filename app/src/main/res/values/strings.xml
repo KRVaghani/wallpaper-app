@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AllWallpaper</string>
+    <string name="nav_open">open Navigation</string>
+    <string name="nav_close">close Navigation</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Wallpapers App</string>
+
+</resources>
